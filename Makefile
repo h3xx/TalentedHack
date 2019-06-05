@@ -1,6 +1,6 @@
 OBJS = circular_buffer.o  midi.o fft.o pitch_detector.o formant_corrector.o pitch_shifter.o lfo.o quantizer.o talentedhack.o pitch_smoother.o
 DEBUG =-g
-CFLAGS = --std=c99 -Wall -fPIC `pkg-config --cflags fftw3f lv2-plugin` -O3 $(DEBUG)
+CFLAGS = --std=c99 -Wall -fPIC -I/usr/include/lv2 `pkg-config --cflags fftw3f lv2-plugin` -O3 $(DEBUG)
 LDFLAGS = $(DEBUG) `pkg-config --libs fftw3f` -shared
 
 PREFIX = /usr

@@ -4,7 +4,7 @@
 #include "event.h"
 #include "event-helpers.h"
 #include "lv2.h"
-#include "uri-map.h"
+#include <uri-map/uri-map.h>
 #include <stdio.h>
 #include <stdlib.h>
 
